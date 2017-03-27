@@ -1,0 +1,6 @@
+{
+  "browser": "chrome", 
+  "port": "7000",
+  "wait": "100",
+  "root": "src"
+}
