@@ -41,6 +41,4 @@ const ParamsExample = () =>
   </div>
 </Router>)
 
-ReactDOM.render
-(<ParamsExample />,
-  app);
+ReactDOM.render(<ParamsExample/>,app);
