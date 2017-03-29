@@ -1,4 +1,0 @@
-{
-middleware: middleware: [function(req, res, next) { next(); }],
-root: "/src",
-}
