@@ -29,16 +29,19 @@ const NoMatch = ({ match }) =>
   <h3>NoMatch</h3>
 </div>)
 
-const ParamsExample = () =>
-(<Router>
-  <div>
-    <Route path="/" component={MainNavLayout}/>
-    <Switch>
-      <Route path="/person/:id" component={Person}/>
-      <Route path="/company/:id" component={Company}/>
-      <Route component={NoMatch}/>
-    </Switch>
-  </div>
-</Router>)
+class App extends React.Component {
+  render(){
+    return (<Router>
+      <div>
+        <Route path="/" component={MainNavLayout}/>
+        <Switch>
+          <Route path="/person/:id" component={Person}/>
+          <Route path="/company/:id" component={Company}/>
+          <Route component={NoMatch}/>
+        </Switch>
+      </div>
+    </Router>);
+  }
+}
 
-ReactDOM.render(<ParamsExample/>,app);
+ReactDOM.render(<App/>, app);  //"app" automagically is like saying document.getElementByID("app"); which lives in ./src/index.html
